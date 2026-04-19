@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 217 20% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 217 20% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 217 20% 15%;
+    --primary: 217 91% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 217 20% 96%;
+    --secondary-foreground: 217 20% 15%;
+    --muted: 217 20% 96%;
+    --muted-foreground: 217 15% 45%;
+    --accent: 45 100% 50%;
+    --accent-foreground: 217 20% 15%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 217 20% 90%;
+    --input: 217 20% 90%;
+    --ring: 217 91% 55%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-feature-settings: 'rlig' 1, 'calt' 1;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
